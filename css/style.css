@@ -1,1 +1,85 @@
 /* Denna fil skall innehålla din CSS kod */
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#wrrapper{
+    display: grid;
+    grid-template-areas: 
+    "nv nv bg";
+}
+nav{
+    display:flex;
+    grid-area: nv;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color: transparent;
+    font-family: sans-serif;
+}
+
+.burger{
+    margin-right: 50px;
+    grid-area: bg;
+    cursor: pointer;
+}
+
+.navlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0px;
+    height: 99vh;
+    top: -100vh;
+    background-color:transparent ;
+    align-items: center;
+    width: 20%;
+    transition: all 1s;
+
+}
+
+.navActive{
+    top: 0vh
+}
+
+.navlinks li{
+list-style: none;
+
+}
+
+.navlinks a{
+    color: lightpink;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.burger div{
+    position:relative;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle .line2{
+    opacity: 0;
+
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
