@@ -10,12 +10,30 @@
 #wrrapper{
     display: grid;
     grid-template-areas: 
-    "nv nv bg";
+    "lg nv bg";
 }
 
+nav{
+    grid-area: nv;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    background-color: transparent;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    padding: 5px 5%;
+    
+}
+
+
+.logo{
+    grid-area: lg;
+}
  .navlinks a {
 
-    display:flex;
+    
     font-family: 'Roboto Mono', bold, sans-serif;
     text-decoration: none;
     color: black;
