@@ -3,135 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:wght@200&family=Roboto+Mono:wght@100;500&family=Roboto+Slab:wght@300&family=Zen+Antique&display=swap');
 
 *{
+    
     padding:0px;
     box-sizing: border-box;
 
 }
-#wrrapper{
-    display: grid;
+
+.body.index{
+    display:gird;
+    width: 100%;
     grid-template-areas: 
-    "lg nv bg";
+    "nv nv nv nv";
+
 }
 
 nav{
-    grid-area: nv;
-    display: flex;
-    justify-content: space-between;
-    height: 5vh;
-    background-color: transparent;
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    align-items: center;
-    padding: 5px 5%;
-    
-}
+grid-area: nv;
 
-
-.logo{
-    grid-area: lg;
-}
- .navlinks a {
-
-    
-    font-family: 'Roboto Mono', bold, sans-serif;
-    text-decoration: none;
-    color: black;
-
- }
-
-.navlinks{
-    display:flex;
-    list-style-type: none;
-    justify-content: flex-end;
 
 }
 
-.navlinks li{
-    margin-right: 2em;
-    font-size: 15px;
-    padding: 10px;
-}
+header{
 
-@media only screen and (max-width: 600px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-   
-  }
-nav{
-    display:flex;
-    grid-area: nv;
-    justify-content: flex-end;
-    align-items: center;
-    height: 10vh;
-    background-color: transparent;
-    font-family: sans-serif;
-    white-space: nowrap;
-    
-}
-
-.burger{
-    margin-right: 50px;
-    grid-area: bg;
-    cursor: pointer;
-}
-
-.navlinks{
-    display: flex;
-    margin-right: 30px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: absolute;
-    right: 0px;
-    height: 70vh;
-    top: -100vh;
-    background-color:transparent ;
-    align-items: center;
-    width: 20%;
-    transition: all 1s;
 
 }
-
-.navActive{
-    top: 0vh
-}
-
-.navlinks li{
-list-style: none;
-
-}
-
-.navlinks a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: inherit;
-    font-size: 20px;
-}
-.burger div{
-    position:relative;
-    width: 25px;
-    height: 3px;
-    background-color: rgb(0, 0, 0);
-    margin: 5px;
-    border-radius: 10px;
-    transition: all 0.3s;
-}
-
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-
-}
-
-.toggle .line2{
-    opacity: 0;
-
-}
-
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
- }
