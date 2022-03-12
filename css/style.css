@@ -3,27 +3,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:wght@200&family=Roboto+Mono:wght@100;500&family=Roboto+Slab:wght@300&family=Zen+Antique&display=swap');
 
 *{
-    
-    padding:0px;
     box-sizing: border-box;
-
-}
-
-.body.index{
-    display:gird;
+    padding: 0;
+    margin: 0;
     width: 100%;
-    grid-template-areas: 
-    "nv nv nv nv";
-
+    
 }
-
-nav{
-grid-area: nv;
-
-
-}
+  
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color:transparent;
+    padding: 90px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  
+  #navbar a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    font-size: 18px; 
+    line-height: 15px;
+    border-radius: 4px;
+    justify-content: right;
+    
+  }
+  
+ 
+  #navbar a:hover {
+    background-color: rgba(221, 221, 221, 0.616);
+    color: rgb(255, 255, 255);
+  }
+  
+  #navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
 
 header{
+    height: 100vh;
+    background-color: black;
+    background-position: bottom;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "h1 hv"
+    'h2 hv';
+}
 
+.header-content{
+    margin-bottom: 500px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: space-between;    
+    align-items: center;
 
 }
+
+.header-content h2{ 
+    grid-area: h2;
+    font-size: 3vmin;
+    
+   
+}
+
+.header-content h1{
+    grid-area: h1;
+    font-size: 8vmin;
+    margin-top: 50vmin;
+
+}
+
+#huvudbild{
+    grid-area: hv;
+    display: block;
+    justify-items: right;
+    margin-top: 15vmin;
+    position: relative;
+
+}
+
+
+#logo{
+    width: 6vmin;
+    height: 5vmin;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
