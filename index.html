@@ -4,64 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Raleway:wght@200;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Gårdstenbostader.se</title>
+    <title>NorthLiving</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+ <nav id="navbar">
+            <a href="index.html" ><img id="logo" src="img/logotyp.png"></a>
+            <ul class="navlinks">  
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="north.html">NORTH</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
 
-    
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
 
+            <script src="js/script.js"></script>
+        </nav> 
+   
 
-
-<div id="wrapper">
-
-    <nav class="navbar">
-        <a href="index.html" id="logo">GårdstensBostäder</a>
-        <ul class="navlinks">  
-            <li><a href="index.html">Startsida</a></li>
-            <li><a href="nyheter.html">Nyheter</a></li>
-            <li><a href="aktiviteter.html">Aktiviteter</a></li>
-            <li><a href="resurser.html">Resurser</a></li>
-            <li><a href="omoss.html">Om Oss</a></li>
-        </ul>
-
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-
-        <script src="js/script.js"></script>
-    </nav> 
-
-  <header>
-        
-        <div class="header-content">
-            <h1>Vi är framtiden</h1>
-            <h2>Hållbarhet & Välmående</h2>
-        </div>
-
-            <img class="bild1" src="/img/Huvudbild 1.png" alt="Huvudbild">
+    <div id="wrapper_index">
        
 
-    </header>
-   <section id="sec1">
-       <p>section1</p>
-   </section>
+        <header> 
+            <div class="text1_index">
+                <h1 class="rubrik_header"> HOME</h1>
 
-   <section  id="sec2">
-       <p>section2</p>
-   </section>
+                <div class="text_header">
+                    <h2>In the darkness of night and wildest of days,</h2>
+                    <h2>I find my home and rest in my True North </h2>
+                </div>
+                
+            </div>
+            
+        </header>
 
-   <section id="sec3"
-   ><p>section3</p>
-       </section>
+        <section class="home">
+            <h1 class="text_home1">LIVING IN NORTH</h1>
+
+            <div class="dela">
+                <div class="text_home2"> 
+                    <p> We exist to show others that you can live in harmony and peacefully. </p>
+                    <p>We build apartment, house, shopping centers, playgrounds so that you can feel that you are finally at home.  </p>
+                </div>  
+            </div>
+        </section>
+
+        <div id="hus_bilder">
+            <article class="sommar_hus"></article>
+           <article class="vinter_hus"></article>
  
-    <footer>FOOTER</footer>
+        </div>
+           
 
-</div>
+        <div class="film">
+
+            <iframe src="https://www.youtube.com/embed/3zTR4ayDG38" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div class="film_text"> 
+                <h1 class="harmony">FIND HARMONY WITH US</h1>
+                <div class="harmony_text">
+
+                    <p>Dark winters with no sunlight for many weeks, and bright summers with sunlight 24 hours/day.</p>
+                    <p>  How is it to live with the extreme light conditions that countries in the Northern hemisphere have?</p>
+                    <p>   In this video I want to share my own personal experience and perspective of living with the seasons in the North of Sweden, 
+                        and take you on a journey to the darkest and brightest times of the year, and share the beauty and the challenges that comes with them.</p>
+                
+
+                </div>
+
+            </div>
+           
+
+
+        </div>
+
+        <footer>
+            <h1></h1>
+        </footer>
+    </div>
+
+
+
 
 </body>
 </html>
