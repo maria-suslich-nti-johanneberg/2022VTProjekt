@@ -115,15 +115,16 @@ ul{
 
     }
     
-    .text1_index{
-        display: grid;
+    .text1_index {
+        display: flex;
         letter-spacing: 2px;
         text-transform: uppercse;
         justify-content: start;
-
         padding-top: 20%;
         padding-left: 10%;
         color: rgb(1, 39, 85);
+        width: 70%;
+        flex-direction: column;
     }
 
     .rubrik_header{
@@ -175,30 +176,18 @@ ul{
         text-align: center;
     }
     
-    #hus_bilder{
-        grid-area: hb;
-        height: 50vh;
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: space-between;
-        justify-items: end;
-        flex-direction: row;
-        padding-bottom: 66px;
-    }
 
-    .sommar_hus{
+    .vinter_hus{
         height: 50vh;
-        width: 40vw;
+        width: 40%;
         background-image: url(../img/hus_2.png);
         background-size: cover;
        background-position: center;
     }
 
-    .vinter_hus{
+    .sommar_hus{
         height: 50vh;
-        width: 40vw;
+        width: 40%;
        background-image: url(../img/hus_1.jpg);
        background-size: cover;
        background-position: center;
@@ -252,6 +241,19 @@ ul{
         "nv"
         "ds"
         "av";
+    }
+
+    #hus_bilder {
+        grid-area: hb;
+        height: 50vh;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .dela_sommar_vinter{
+            display: flex;
+            justify-content: space-evenly;
+           
+        
     }
 
     .video_2{
@@ -452,13 +454,110 @@ ul{
 
     /*------------- ABOUT SIDA ---------- */
 
+    #wrapper_about{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+        color: rgb(0, 8, 114);
+        
+    }
 
+    .about_us{
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+
+    }
+
+    .text_omoss{
+        width: 90%;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .bild_omoss{
+        padding: 20px;
+        height: 100vh;
+        width: 100%;
+        background-image: url(../img/omoss.jpg);
+        background-size: cover;
+    }
+
+    button{
+        padding: 20px 35px;
+        background-color: #ffffff;
+        color: rgb(0, 8, 114);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        justify-content: center;
+        transition: all 0.3s ease 0s;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+    
+    }
+    
+    button:hover {
+        background-color: #ffc400;
+    }
 
     /*------------- CONTACT SIDA ---------- */ 
 
+    #wrapper_contact{
+        width: 100%;
+        height: 100vh;
+        
+        font-family: 'Raleway', sans-serif;
+        color: rgb(0, 8, 114);
+        background-image: url(../img/huvudbild1.png);
+      
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        align-content: flex-start;
+        padding-left:10em;
+    }
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid #0037b1;
+        border-radius: 16px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
 
-
-   
+      input[type=submit] {
+        background-color: #3344a769;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #0018a079;
+      }
+      
+      .container {
+        border-radius: 5px;
+     
+    }
+    
+      
 
 
 
@@ -543,13 +642,144 @@ ul{
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
+/*-------Index--------*/
+
+header {
+    grid-area: hd;
+    height: 64vh;
+    width: 100%;
+    background-image: url(../img/huvudbild1.png);
+    background-size: cover;
+}
+
+.text1_index {
+    display: flex;
+    letter-spacing: 2px;
+    text-transform: uppercse;
+    justify-content: start;
+    padding-top: 20%;
+    padding-left: 10%;
+    color: rgb(1, 39, 85);
+    flex-direction: column;
+    width: 70%;
+}
+
+.rubrik_header {
+    font-size: 50px;
+}
+
+.text_header {
+    font-size: 10px;
+}
+
+.text_home1 {
+    display: flex;
+    justify-items: left;
+    padding-top: 13px;
+    align-items: center;
+    font-size: 3vmax;
+    justify-content: center;
+    color: rgb(1, 39, 85);
+}
+
+#hus_bilder{
+    grid-area: hb;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+ 
+}
+
+.text_home2 {
+    padding: 10px;
+    font-size: 14px;
+    text-align: justify;
+    width: 50%;
+}
+
+.dela_sommar_vinter {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+.vinter_hus{
+
+    width: 50%;
+    background-image: url(../img/hus_2.png);
+    background-size: cover;
+   
+}
+
+.sommar_hus {
+    width: 50%;
+    background-image: url(../img/hus_1.jpg);
+    background-size: cover;
+}
+
+.film{
+    grid-area: fl;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+.film_text{
+    width: 100%;
+    padding: 20px 20px 20px 20px ;
+    
+}
   
+iframe{
+    padding-top: 10px;
+    height: 80vh;
+   
+}
+
+.harmony_text{
+    color: black;
+    font-size: 14px;
+}
+
 /*------- NORTH ------*/
+
+.north_wonder {
+    grid-area: nv;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.dela_nw {
+   
+    padding-left: 0;
+}
+
+.vinter {
+   display: none;
+}
+
+.text_darkness {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 26px;
+}
+
+.text_h2_darkness {
+    padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    width: 65%;
+}
 
 .aventyr{
     grid-area: av;
     height: 20vh;
-    padding: 20px;
+    padding: 2px;
     background-color: rgb(255, 255, 255);
     display: flex;
     grid-template-areas: 
@@ -563,7 +793,53 @@ ul{
 
 }
 
+/*----ABOUT US ---*/
+#wrapper_about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 8, 114);
+    flex-direction: column;
+    align-items: center;
+}
 
-    
+.about_us {
+    display: flex;
+   width: 100%;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.bild_omoss {
+   
+    background-position: center;
+}
+
+
+/*----CONTACT---*/
+
+#wrapper_contact {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 8, 114);
+    background-image: url(../img/huvudbild1.png);
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding: 30px;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+   
+.contact_us{
+    text-align: center;
+}
   
 }
