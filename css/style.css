@@ -31,7 +31,7 @@ ul{
     justify-content: space-evenly;
     padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */    
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-    transition: all 0.3s ease-in-out 0; 
+    transition: all 0.3s ease-in-out 2s; 
     background-color: rgba(255, 255, 255, 0.37);
 
     }
@@ -118,7 +118,6 @@ ul{
     .text1_index {
         display: flex;
         letter-spacing: 2px;
-        text-transform: uppercse;
         justify-content: start;
         padding-top: 20%;
         padding-left: 10%;
@@ -655,7 +654,6 @@ header {
 .text1_index {
     display: flex;
     letter-spacing: 2px;
-    text-transform: uppercse;
     justify-content: start;
     padding-top: 20%;
     padding-left: 10%;
