@@ -32,7 +32,7 @@ ul{
     padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */    
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     transition: all 0.3s ease-in-out 2s; 
-    background-color: rgba(255, 255, 255, 0.37);
+    background-color: rgba(255, 255, 255, 0.913);
 
     }
   
@@ -127,11 +127,11 @@ ul{
     }
 
     .rubrik_header{
-        font-size: 80px;
+        font-size: 40px;
     }
 
     .text_header{
-        font-size: 20px;
+        font-size: 18px;
     }
 
 
@@ -193,14 +193,18 @@ ul{
     }
     
     
-    .film{
-        grid-area: fl;
-        height: 60vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+.film {
+    grid-area: fl;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 4vh;
+    align-items: center;
+}
         
-    }
+    
    
     iframe{
         padding-top: 10px;
@@ -217,14 +221,15 @@ ul{
 
     .harmony{
       color: black;  
-      font-size: 30px;
+      font-size: 26px;
       padding:10px;
     
     }
 
     .harmony_text{
         color: black;
-        font-size: 20px;
+        font-size: 18px;
+
     }
 
     .harmony_text p{
@@ -257,8 +262,8 @@ ul{
 
     .video_2{
         grid-area: v2;
-        width: 100%;
-        padding-top: 10vh;
+    width: 100%;
+    padding-top: 0;
     }
 
     .north_wonder{
