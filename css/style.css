@@ -648,13 +648,15 @@ ul{
 
 /*-------Index--------*/
 
-header {
-    grid-area: hd;
-    height: 64vh;
-    width: 100%;
-    background-image: url(../img/huvudbild1.png);
-    background-size: cover;
-}
+
+    header {
+        grid-area: hd;
+        height: 41vh;
+        width: 100%;
+        background-image: url(../img/huvudbild1.png);
+        background-size: cover;
+    }
+
 
 .text1_index {
     display: flex;
@@ -668,7 +670,7 @@ header {
 }
 
 .rubrik_header {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .text_header {
